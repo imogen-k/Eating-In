@@ -1,0 +1,6 @@
+framework module Pods_eating_in_admin {
+  umbrella header "Pods-eating in admin-umbrella.h"
+
+  export *
+  module * { export * }
+}

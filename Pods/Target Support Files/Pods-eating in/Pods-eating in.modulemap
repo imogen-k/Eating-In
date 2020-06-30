@@ -1,0 +1,6 @@
+framework module Pods_eating_in {
+  umbrella header "Pods-eating in-umbrella.h"
+
+  export *
+  module * { export * }
+}
