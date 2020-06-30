@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kOP-pp-XOd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Categories-->
+        <scene sceneID="dRE-CX-LRf">
+            <objects>
+                <viewController id="V8G-UB-2ys" customClass="HomeVC" customModule="eating_in" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nFM-7F-3NO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VjB-21-Q6e">
+                                <rect key="frame" x="95" y="53" width="299" height="714"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ST2-XE-BnR">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="0Dk-Aa-vfu">
+                                <rect key="frame" x="-95.5" y="181" width="264.5" height="54"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="QMy-nk-PEg">
+                                        <rect key="frame" x="34.5" y="0.0" width="195.5" height="22"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgH-UM-6PL">
+                                                <rect key="frame" x="0.0" y="0.0" width="7" height="22"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="dot"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mC-NH-kzO">
+                                                <rect key="frame" x="94.5" y="0.0" width="7" height="22"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="dot blue"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doH-AO-fR1">
+                                                <rect key="frame" x="188.5" y="0.0" width="7" height="22"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="dot blue"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="j01-zf-skT">
+                                        <rect key="frame" x="0.0" y="25" width="264.5" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTQ-cD-7Ui">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9O-gJ-B1u">
+                                                <rect key="frame" x="105.5" y="0.0" width="55" height="29"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                <state key="normal" title="Cuisines">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69196810789999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cuisinesClicked:" destination="V8G-UB-2ys" eventType="touchUpInside" id="3FR-Vh-qJB"/>
+                                                    <segue destination="D0Q-mp-keR" kind="show" identifier="ToCuisines" animates="NO" id="1G7-gw-3wF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ap-7x-pXI">
+                                                <rect key="frame" x="196.5" y="0.0" width="68" height="29"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                <state key="normal" title="Favourites">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69196810789999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="LWc-No-uQD" kind="show" animates="NO" id="Ss3-5O-9Ob"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XW-W0-39j">
+                                <rect key="frame" x="-10" y="775" width="434" height="72"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="K9N-pd-m1O">
+                                        <rect key="frame" x="50" y="-7" width="334" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auJ-Nl-9CV">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="62"/>
+                                                <state key="normal" image="Recipes bg"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fN-TA-FLh">
+                                                <rect key="frame" x="192" y="0.0" width="142" height="62"/>
+                                                <state key="normal" image="list no bg"/>
+                                                <connections>
+                                                    <segue destination="1a7-wY-Gok" kind="show" id="PGf-bF-ane"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="K9N-pd-m1O" firstAttribute="leading" secondItem="5XW-W0-39j" secondAttribute="leading" constant="50" id="73m-fK-TA5"/>
+                                    <constraint firstItem="K9N-pd-m1O" firstAttribute="top" secondItem="5XW-W0-39j" secondAttribute="top" constant="-7" id="AYR-6n-x7N"/>
+                                    <constraint firstItem="K9N-pd-m1O" firstAttribute="centerX" secondItem="5XW-W0-39j" secondAttribute="centerX" id="Fbf-E9-NxV"/>
+                                    <constraint firstAttribute="trailing" secondItem="K9N-pd-m1O" secondAttribute="trailing" constant="50" id="NKL-mg-57S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.89803921568627454" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="5XW-W0-39j" secondAttribute="bottom" constant="-39" id="9op-16-kVm"/>
+                            <constraint firstItem="5XW-W0-39j" firstAttribute="top" secondItem="VjB-21-Q6e" secondAttribute="bottom" constant="8" id="BS7-rh-60S"/>
+                            <constraint firstItem="VjB-21-Q6e" firstAttribute="top" secondItem="Z85-e7-Pez" secondAttribute="top" constant="53" id="Fnb-A0-x50"/>
+                            <constraint firstItem="5XW-W0-39j" firstAttribute="leading" secondItem="nFM-7F-3NO" secondAttribute="leadingMargin" constant="-30" id="Xc9-sK-VvM"/>
+                            <constraint firstItem="0Dk-Aa-vfu" firstAttribute="top" secondItem="Z85-e7-Pez" secondAttribute="top" constant="181" id="eHc-G0-wXH"/>
+                            <constraint firstItem="0Dk-Aa-vfu" firstAttribute="leading" secondItem="nFM-7F-3NO" secondAttribute="leading" constant="-95.5" id="hoy-aW-yy8"/>
+                            <constraint firstAttribute="bottom" secondItem="VjB-21-Q6e" secondAttribute="bottom" constant="75" id="m7n-On-iQ3"/>
+                            <constraint firstItem="VjB-21-Q6e" firstAttribute="leading" secondItem="Z85-e7-Pez" secondAttribute="leading" constant="95" id="oLD-oe-MpN"/>
+                            <constraint firstItem="5XW-W0-39j" firstAttribute="centerX" secondItem="nFM-7F-3NO" secondAttribute="centerX" id="vzb-86-VZ7"/>
+                            <constraint firstItem="VjB-21-Q6e" firstAttribute="trailing" secondItem="nFM-7F-3NO" secondAttribute="trailingMargin" id="wSz-g6-lgF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z85-e7-Pez"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Categories" id="BGG-t2-JCi">
+                        <barButtonItem key="leftBarButtonItem" title="Login" id="ey8-RV-myi">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="loginClicked:" destination="V8G-UB-2ys" id="tkG-5Z-7Vh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="categoriesButton" destination="DTQ-cD-7Ui" id="s5G-Mi-yqI"/>
+                        <outlet property="categoriesDotsStack" destination="0Dk-Aa-vfu" id="Kqz-2M-UWt"/>
+                        <outlet property="categoriesStack" destination="j01-zf-skT" id="sqW-vB-AUH"/>
+                        <outlet property="collectionViewCategories" destination="VjB-21-Q6e" id="xA4-eB-V0k"/>
+                        <outlet property="cuisinesButton" destination="h9O-gJ-B1u" id="CIu-q2-CQ4"/>
+                        <outlet property="favouritesButton" destination="3ap-7x-pXI" id="nKM-Ih-i4D"/>
+                        <outlet property="loginOutBtn" destination="ey8-RV-myi" id="dxl-uU-bgj"/>
+                        <outlet property="navBarBackground" destination="5XW-W0-39j" id="Xki-le-bRj"/>
+                        <segue destination="nZy-sx-6WZ" kind="show" identifier="ToRecipes" id="MNI-Du-YUG"/>
+                    </connections>
+                </viewController>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="119" id="1v3-Ok-rB9">
+                    <rect key="frame" x="0.0" y="0.0" width="201" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-pq-5g3">
+                            <rect key="frame" x="0.0" y="0.0" width="41" height="26"/>
+                            <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="12"/>
+                            <state key="normal" title="Recipes">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-MQ-wfo">
+                            <rect key="frame" x="160" y="0.0" width="41" height="26"/>
+                            <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="12"/>
+                            <state key="normal" title="Lists">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="NC0-pq-5g3" firstAttribute="centerY" secondItem="1v3-Ok-rB9" secondAttribute="centerY" id="hav-KJ-YQB"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="MHF-ex-CVW"/>
+                </stackView>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IvJ-ZC-1q1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="144.64285714285714"/>
+        </scene>
+        <!--RecipesVC-->
+        <scene sceneID="oU2-La-uir">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="nZy-sx-6WZ" customClass="RecipesVC" customModule="eating_in" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VbG-PE-mtU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="5" estimatedRowHeight="5" sectionHeaderHeight="10" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="3WV-sN-HD9">
+                                <rect key="frame" x="5" y="141" width="404" height="639"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="scrollIndicatorInsets" minX="5" minY="10" maxX="5" maxY="0.0"/>
+                                <color key="separatorColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXY-gY-zJx">
+                                <rect key="frame" x="-11" y="780" width="434" height="74"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="gTc-xa-RIa">
+                                        <rect key="frame" x="50" y="-7" width="334" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hq3-5C-lji">
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="62"/>
+                                                <state key="normal" image="Recipes bg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="V8G-UB-2ys" kind="show" id="92X-wA-NjL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yl-N0-fSZ">
+                                                <rect key="frame" x="185" y="0.0" width="149" height="62"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="list no bg">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="1a7-wY-Gok" kind="show" id="bck-tm-twC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gTc-xa-RIa" firstAttribute="top" secondItem="GXY-gY-zJx" secondAttribute="top" constant="-7" id="15o-UH-urv"/>
+                                    <constraint firstItem="gTc-xa-RIa" firstAttribute="leading" secondItem="GXY-gY-zJx" secondAttribute="leading" constant="50" id="L54-xn-4dL"/>
+                                    <constraint firstItem="gTc-xa-RIa" firstAttribute="centerX" secondItem="GXY-gY-zJx" secondAttribute="centerX" id="jNs-Vx-cFT"/>
+                                    <constraint firstAttribute="trailing" secondItem="gTc-xa-RIa" secondAttribute="trailing" constant="50" id="lRp-Jv-P9s"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chosen category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEv-Dk-XY6">
+                                <rect key="frame" x="0.0" y="-18" width="414" height="17"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7Z-c8-re1">
+                                <rect key="frame" x="0.0" y="7" width="414" height="124"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" id="tqx-ZO-pKg">
+                                <rect key="frame" x="0.0" y="7" width="414" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="safeArea" id="IxK-On-OdM"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09w-vl-cO8">
+                                <rect key="frame" x="186" y="59" width="42" height="20"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3WV-sN-HD9" firstAttribute="top" secondItem="tqx-ZO-pKg" secondAttribute="bottom" constant="10" id="1v7-Ve-TO7"/>
+                            <constraint firstItem="tqx-ZO-pKg" firstAttribute="trailing" secondItem="4VY-PX-hbs" secondAttribute="trailing" id="3aT-RS-jNu"/>
+                            <constraint firstItem="V7Z-c8-re1" firstAttribute="top" secondItem="4VY-PX-hbs" secondAttribute="top" constant="7" id="6UW-o7-HSQ"/>
+                            <constraint firstItem="09w-vl-cO8" firstAttribute="centerY" secondItem="tqx-ZO-pKg" secondAttribute="centerY" id="7Dz-zi-fTA"/>
+                            <constraint firstItem="3WV-sN-HD9" firstAttribute="top" secondItem="V7Z-c8-re1" secondAttribute="bottom" constant="10" id="8sZ-9F-Zk7"/>
+                            <constraint firstItem="GXY-gY-zJx" firstAttribute="top" secondItem="3WV-sN-HD9" secondAttribute="bottom" id="9IS-H2-Vrc"/>
+                            <constraint firstItem="GXY-gY-zJx" firstAttribute="top" secondItem="3WV-sN-HD9" secondAttribute="bottom" id="AiR-KL-OFV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GXY-gY-zJx" secondAttribute="trailing" constant="-29" id="DXR-hv-SxP"/>
+                            <constraint firstItem="3WV-sN-HD9" firstAttribute="top" secondItem="tqx-ZO-pKg" secondAttribute="bottom" constant="10" id="Ftw-PV-1EY"/>
+                            <constraint firstItem="3WV-sN-HD9" firstAttribute="leading" secondItem="4VY-PX-hbs" secondAttribute="leading" constant="5" id="HA1-Ju-vde"/>
+                            <constraint firstAttribute="bottom" secondItem="GXY-gY-zJx" secondAttribute="bottom" constant="-12" id="Ipz-6X-hKL"/>
+                            <constraint firstItem="GXY-gY-zJx" firstAttribute="leading" secondItem="VbG-PE-mtU" secondAttribute="leadingMargin" constant="-31" id="TfK-8P-9F7"/>
+                            <constraint firstItem="GXY-gY-zJx" firstAttribute="leading" secondItem="VbG-PE-mtU" secondAttribute="leading" constant="-11" id="Udl-oG-YxP"/>
+                            <constraint firstItem="V7Z-c8-re1" firstAttribute="leading" secondItem="4VY-PX-hbs" secondAttribute="leading" id="cQs-Pt-96d"/>
+                            <constraint firstItem="4VY-PX-hbs" firstAttribute="trailing" secondItem="3WV-sN-HD9" secondAttribute="trailing" constant="5" id="cxe-hx-C6m"/>
+                            <constraint firstItem="4VY-PX-hbs" firstAttribute="trailing" secondItem="VEv-Dk-XY6" secondAttribute="trailing" id="fmx-79-dfN"/>
+                            <constraint firstItem="tqx-ZO-pKg" firstAttribute="leading" secondItem="4VY-PX-hbs" secondAttribute="leading" id="iD5-hP-tWq"/>
+                            <constraint firstAttribute="bottom" secondItem="3WV-sN-HD9" secondAttribute="bottom" constant="62" id="nnN-7F-Csy"/>
+                            <constraint firstItem="VEv-Dk-XY6" firstAttribute="leading" secondItem="4VY-PX-hbs" secondAttribute="leading" id="nqp-RZ-lEc"/>
+                            <constraint firstItem="09w-vl-cO8" firstAttribute="centerX" secondItem="tqx-ZO-pKg" secondAttribute="centerX" id="pGz-C1-na5"/>
+                            <constraint firstItem="tqx-ZO-pKg" firstAttribute="top" secondItem="4VY-PX-hbs" secondAttribute="top" constant="7" id="rbu-rH-zrP"/>
+                            <constraint firstItem="VEv-Dk-XY6" firstAttribute="top" secondItem="VbG-PE-mtU" secondAttribute="top" constant="-18" id="sak-vc-Zrg"/>
+                            <constraint firstAttribute="trailing" secondItem="GXY-gY-zJx" secondAttribute="trailing" constant="-9" id="v6p-oI-BfM"/>
+                            <constraint firstItem="3WV-sN-HD9" firstAttribute="centerX" secondItem="VbG-PE-mtU" secondAttribute="centerX" id="wWX-gb-dcy"/>
+                            <constraint firstItem="V7Z-c8-re1" firstAttribute="trailing" secondItem="4VY-PX-hbs" secondAttribute="trailing" id="xqY-0C-6rY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4VY-PX-hbs"/>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="Tlj-u3-jIf"/>
+                    <connections>
+                        <outlet property="categoryImage" destination="tqx-ZO-pKg" id="m96-ae-aVr"/>
+                        <outlet property="labelText" destination="09w-vl-cO8" id="Lpl-kp-ALq"/>
+                        <outlet property="navBarBackground" destination="GXY-gY-zJx" id="gyx-di-ZdY"/>
+                        <outlet property="tableView" destination="3WV-sN-HD9" id="KEU-bX-6sI"/>
+                        <segue destination="BBh-OG-SDE" kind="show" identifier="ToRecipeDetails" id="SHx-sl-78D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Si-0A-dtS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="144.64285714285714"/>
+        </scene>
+        <!--Recipe DetailsVC-->
+        <scene sceneID="fRR-NQ-81Z">
+            <objects>
+                <viewController id="BBh-OG-SDE" customClass="RecipeDetailsVC" customModule="eating_in" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bWk-cy-wxT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="yCl-9k-5Bm">
+                                <rect key="frame" x="0.0" y="-89" width="414" height="931"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kO7-5e-wmI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" id="d2I-Oe-PdB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOX-kB-ybb">
+                                        <rect key="frame" x="0.0" y="287" width="414" height="644"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxY-Nz-eLA">
+                                                <rect key="frame" x="0.0" y="145" width="414" height="499"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="vSh-HD-l39">
+                                                        <rect key="frame" x="20" y="20" width="72" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Y2K-iI-2I8">
+                                                        <rect key="frame" x="28" y="59" width="414" height="210"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="A7F-S4-XOo">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="24"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="6Pz-gc-bRM">
+                                                                <rect key="frame" x="0.0" y="31" width="414" height="24"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="UAP-4L-PEc">
+                                                                <rect key="frame" x="0.0" y="62" width="414" height="24"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="RFq-O3-81U">
+                                                                <rect key="frame" x="0.0" y="93" width="414" height="24"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="ahH-MX-iiB">
+                                                                <rect key="frame" x="0.0" y="124" width="414" height="24"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="3r0-e3-LGY">
+                                                                <rect key="frame" x="0.0" y="155" width="414" height="24"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrediets" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="MEZ-tZ-P77">
+                                                                <rect key="frame" x="0.0" y="186" width="414" height="24"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNX-np-XlY">
+                                                        <rect key="frame" x="20" y="409" width="374" height="48"/>
+                                                        <size key="titleShadowOffset" width="4" height="4"/>
+                                                        <state key="normal" image="Plus"/>
+                                                        <connections>
+                                                            <action selector="plusClicked:" destination="BBh-OG-SDE" eventType="touchUpInside" id="nfl-yR-t4L"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="j14-g3-enm">
+                                                        <rect key="frame" x="283" y="25" width="111" height="21"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWF-kR-74y">
+                                                                <rect key="frame" x="0.0" y="4" width="111" height="13"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ru-ru-5RH">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="13"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="13"/>
+                                                                        <state key="normal" title="   Shopping list">
+                                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <segue destination="1a7-wY-Gok" kind="show" id="iXB-jf-qZF"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="QLA-Qm-Ndf">
+                                                                        <rect key="frame" x="81" y="0.0" width="30" height="13"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="30" id="Jdn-V5-nf5"/>
+                                                                            <constraint firstAttribute="height" constant="13" id="X08-JB-M9c"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="nWF-kR-74y" firstAttribute="top" secondItem="j14-g3-enm" secondAttribute="top" constant="4" id="Y2q-T5-cKk"/>
+                                                            <constraint firstAttribute="trailing" secondItem="nWF-kR-74y" secondAttribute="trailing" id="boO-Xk-Ir9"/>
+                                                            <constraint firstItem="nWF-kR-74y" firstAttribute="leading" secondItem="j14-g3-enm" secondAttribute="leading" id="ggY-J1-z7d"/>
+                                                            <constraint firstAttribute="bottom" secondItem="nWF-kR-74y" secondAttribute="bottom" constant="4" id="tUZ-hm-gCd"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="pNX-np-XlY" secondAttribute="trailing" constant="20" id="1mB-w2-Nrs"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pNX-np-XlY" secondAttribute="bottom" constant="42" id="UAT-oc-AMM"/>
+                                                    <constraint firstItem="Y2K-iI-2I8" firstAttribute="leading" secondItem="LxY-Nz-eLA" secondAttribute="leading" constant="28" id="Ym9-o9-PRd"/>
+                                                    <constraint firstItem="j14-g3-enm" firstAttribute="top" secondItem="LxY-Nz-eLA" secondAttribute="top" constant="25" id="ZVa-3g-JAH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="j14-g3-enm" secondAttribute="trailing" constant="20" id="gGJ-tM-BPs"/>
+                                                    <constraint firstItem="pNX-np-XlY" firstAttribute="leading" secondItem="LxY-Nz-eLA" secondAttribute="leading" constant="20" id="quJ-12-paM"/>
+                                                    <constraint firstItem="Y2K-iI-2I8" firstAttribute="top" secondItem="vSh-HD-l39" secondAttribute="bottom" constant="22" id="x9Y-Yw-Bg6"/>
+                                                    <constraint firstItem="Y2K-iI-2I8" firstAttribute="top" secondItem="j14-g3-enm" secondAttribute="bottom" constant="13" id="zZI-7p-Ra5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZG-02-71f">
+                                                <rect key="frame" x="0.0" y="-1" width="414" height="144"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to cook" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="Z0H-i6-MPO">
+                                                        <rect key="frame" x="20" y="20" width="284" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe paragraph..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" id="eG9-in-NOU">
+                                                        <rect key="frame" x="20" y="48" width="377" height="81"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="14"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="LxY-Nz-eLA" secondAttribute="trailing" id="1Ey-hW-il3"/>
+                                            <constraint firstAttribute="bottom" secondItem="LxY-Nz-eLA" secondAttribute="bottom" id="651-oi-Ifb"/>
+                                            <constraint firstItem="LxY-Nz-eLA" firstAttribute="leading" secondItem="YOX-kB-ybb" secondAttribute="leading" id="7VK-gG-POh"/>
+                                            <constraint firstItem="6ZG-02-71f" firstAttribute="top" secondItem="YOX-kB-ybb" secondAttribute="top" constant="-1" id="J5S-1d-N79"/>
+                                            <constraint firstItem="LxY-Nz-eLA" firstAttribute="top" secondItem="YOX-kB-ybb" secondAttribute="top" constant="145" id="Yh7-aH-EvT"/>
+                                            <constraint firstItem="LxY-Nz-eLA" firstAttribute="trailing" secondItem="6ZG-02-71f" secondAttribute="trailing" id="io9-yQ-mPc"/>
+                                            <constraint firstItem="LxY-Nz-eLA" firstAttribute="leading" secondItem="6ZG-02-71f" secondAttribute="leading" id="lYH-V1-pub"/>
+                                            <constraint firstItem="LxY-Nz-eLA" firstAttribute="top" secondItem="6ZG-02-71f" secondAttribute="bottom" constant="2" id="ocd-zk-HBs"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqg-0G-8v9">
+                                        <rect key="frame" x="157" y="175" width="100.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YOX-kB-ybb" firstAttribute="top" secondItem="kO7-5e-wmI" secondAttribute="bottom" constant="3" id="0o0-ke-VOZ"/>
+                                    <constraint firstItem="Kqg-0G-8v9" firstAttribute="centerX" secondItem="d2I-Oe-PdB" secondAttribute="centerX" id="AtI-Nc-WQf"/>
+                                    <constraint firstAttribute="trailing" secondItem="YOX-kB-ybb" secondAttribute="trailing" id="QAa-VQ-LST"/>
+                                    <constraint firstItem="YOX-kB-ybb" firstAttribute="bottom" secondItem="phE-fx-5Os" secondAttribute="bottom" id="VKW-T9-U1R"/>
+                                    <constraint firstItem="YOX-kB-ybb" firstAttribute="centerX" secondItem="yCl-9k-5Bm" secondAttribute="centerX" id="XEa-8z-krN"/>
+                                    <constraint firstItem="YOX-kB-ybb" firstAttribute="leading" secondItem="yCl-9k-5Bm" secondAttribute="leading" id="ZdO-gY-pYG"/>
+                                    <constraint firstItem="kO7-5e-wmI" firstAttribute="top" secondItem="1uv-DZ-VvV" secondAttribute="top" id="gUH-9V-JZ8"/>
+                                    <constraint firstItem="Kqg-0G-8v9" firstAttribute="centerY" secondItem="d2I-Oe-PdB" secondAttribute="centerY" constant="43" id="jCv-OW-Xod"/>
+                                    <constraint firstItem="kO7-5e-wmI" firstAttribute="bottom" secondItem="d2I-Oe-PdB" secondAttribute="bottom" id="mB8-nf-6g5"/>
+                                    <constraint firstItem="kO7-5e-wmI" firstAttribute="trailing" secondItem="1uv-DZ-VvV" secondAttribute="trailing" id="npV-ex-jTt"/>
+                                    <constraint firstItem="kO7-5e-wmI" firstAttribute="leading" secondItem="1uv-DZ-VvV" secondAttribute="leading" id="uEd-j8-nLy"/>
+                                    <constraint firstAttribute="bottom" secondItem="YOX-kB-ybb" secondAttribute="bottom" id="uGj-1L-kTq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1uv-DZ-VvV"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="phE-fx-5Os"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="yCl-9k-5Bm" secondAttribute="bottom" constant="-34" id="P7H-R5-uaS"/>
+                            <constraint firstItem="yCl-9k-5Bm" firstAttribute="centerX" secondItem="bWk-cy-wxT" secondAttribute="centerX" id="QKJ-AI-DbQ"/>
+                            <constraint firstItem="yCl-9k-5Bm" firstAttribute="trailing" secondItem="EPz-Lt-iep" secondAttribute="trailing" id="pyy-v0-o5s"/>
+                            <constraint firstItem="yCl-9k-5Bm" firstAttribute="top" secondItem="bWk-cy-wxT" secondAttribute="topMargin" constant="-89" id="xcj-HA-xqL"/>
+                            <constraint firstItem="yCl-9k-5Bm" firstAttribute="leading" secondItem="EPz-Lt-iep" secondAttribute="leading" id="ynp-0q-qFh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EPz-Lt-iep"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wcZ-Io-OfK"/>
+                    <connections>
+                        <outlet property="howToCookBg" destination="YOX-kB-ybb" id="PDR-zl-KnU"/>
+                        <outlet property="ingredientItem2" destination="6Pz-gc-bRM" id="eNM-yz-VWV"/>
+                        <outlet property="ingredientItem3" destination="UAP-4L-PEc" id="mwy-6H-1Ql"/>
+                        <outlet property="ingredientItem4" destination="RFq-O3-81U" id="iEC-wZ-dKY"/>
+                        <outlet property="ingredients5" destination="ahH-MX-iiB" id="e3l-OP-7hE"/>
+                        <outlet property="ingredients6" destination="3r0-e3-LGY" id="14H-ak-9mF"/>
+                        <outlet property="ingredients7" destination="MEZ-tZ-P77" id="dWD-Jd-wFI"/>
+                        <outlet property="ingredientsList" destination="A7F-S4-XOo" id="f7Y-jM-eZV"/>
+                        <outlet property="plusButton" destination="pNX-np-XlY" id="OAp-SV-zHV"/>
+                        <outlet property="recipeDetails" destination="eG9-in-NOU" id="clE-G4-1Lb"/>
+                        <outlet property="recipeImage" destination="d2I-Oe-PdB" id="qS5-Yt-2gl"/>
+                        <outlet property="recipeName" destination="Kqg-0G-8v9" id="ckh-RO-3Jl"/>
+                        <outlet property="shoppingListView" destination="j14-g3-enm" id="uRC-vj-Tee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZc-z9-tQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2728.985507246377" y="101.78571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K6V-wx-OLD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kOP-pp-XOd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="m0L-qA-0rL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U8r-nZ-tOU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="V8G-UB-2ys" kind="relationship" relationship="rootViewController" id="HmL-T3-A1x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRa-L8-koc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </scene>
+        <!--Cuisines-->
+        <scene sceneID="eJE-7a-9b8">
+            <objects>
+                <viewController title="Cuisines" id="D0Q-mp-keR" customClass="CuisinesVC" customModule="eating_in" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6xQ-Cu-TMu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XxR-Ww-pia">
+                                <rect key="frame" x="-10" y="775" width="434" height="75"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="pyG-B2-kqf">
+                                        <rect key="frame" x="54" y="-7" width="334" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRh-pJ-W5s">
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="62"/>
+                                                <state key="normal" image="Recipes bg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="V8G-UB-2ys" kind="show" id="LjG-q4-YGa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3B-xf-iq7">
+                                                <rect key="frame" x="185" y="0.0" width="149" height="62"/>
+                                                <state key="normal" image="list no bg">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="1a7-wY-Gok" kind="show" id="XF5-Tb-AfY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pyG-B2-kqf" firstAttribute="leading" secondItem="XxR-Ww-pia" secondAttribute="leading" constant="54" id="5BT-gP-WHf"/>
+                                    <constraint firstAttribute="trailing" secondItem="pyG-B2-kqf" secondAttribute="trailing" constant="46" id="81X-yb-wW4"/>
+                                    <constraint firstItem="pyG-B2-kqf" firstAttribute="centerX" secondItem="XxR-Ww-pia" secondAttribute="centerX" constant="4" id="JYP-eX-Sls"/>
+                                    <constraint firstItem="pyG-B2-kqf" firstAttribute="top" secondItem="XxR-Ww-pia" secondAttribute="top" constant="-7" id="b27-U3-TAP"/>
+                                </constraints>
+                            </view>
+                            <collectionView multipleTouchEnabled="YES" contentMode="TopLeft" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TBq-cU-FAQ">
+                                <rect key="frame" x="95" y="53" width="299" height="714"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="SkE-81-ZZL">
+                                    <size key="itemSize" width="114" height="152"/>
+                                    <size key="estimatedItemSize" width="397" height="152"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="1is-n2-LWO">
+                                <rect key="frame" x="-95.5" y="181" width="265" height="54"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="KWN-ex-bXS">
+                                        <rect key="frame" x="35" y="0.0" width="195" height="22"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jep-xl-LlA">
+                                                <rect key="frame" x="0.0" y="0.0" width="7" height="22"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="dot blue"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-QP-Cx8">
+                                                <rect key="frame" x="94" y="0.0" width="7" height="22"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="dot"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGN-9c-qJR">
+                                                <rect key="frame" x="188" y="0.0" width="7" height="22"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="dot blue"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="O46-bl-Cg5">
+                                        <rect key="frame" x="0.0" y="25" width="265" height="29"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcN-0v-IYQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="29"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                <state key="normal" title="Categories">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69196810789999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="categoriesClicked:" destination="D0Q-mp-keR" eventType="touchUpInside" id="yj2-3C-XV4"/>
+                                                    <segue destination="V8G-UB-2ys" kind="show" identifier="ToHome" animates="NO" id="VF3-V8-oTY"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Cuisines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJT-ba-G5X">
+                                                <rect key="frame" x="106" y="0.0" width="55" height="29"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGs-qB-eTJ">
+                                                <rect key="frame" x="197" y="0.0" width="68" height="29"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                <state key="normal" title="Favourites">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69196810789999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="LWc-No-uQD" kind="show" animates="NO" id="zKE-xm-aAD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TBq-cU-FAQ" firstAttribute="top" secondItem="uw9-V1-pR8" secondAttribute="top" constant="53" id="7Fg-i9-VW4"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="XxR-Ww-pia" secondAttribute="bottom" constant="-42" id="HSB-ee-62i"/>
+                            <constraint firstItem="XxR-Ww-pia" firstAttribute="top" secondItem="TBq-cU-FAQ" secondAttribute="bottom" constant="8" id="K60-Fy-OUf"/>
+                            <constraint firstItem="XxR-Ww-pia" firstAttribute="centerX" secondItem="6xQ-Cu-TMu" secondAttribute="centerX" id="Q97-Hs-kIr"/>
+                            <constraint firstItem="1is-n2-LWO" firstAttribute="top" secondItem="uw9-V1-pR8" secondAttribute="top" constant="181" id="iBj-yN-HM3"/>
+                            <constraint firstItem="TBq-cU-FAQ" firstAttribute="trailing" secondItem="6xQ-Cu-TMu" secondAttribute="trailingMargin" id="mHf-WL-CaJ"/>
+                            <constraint firstItem="TBq-cU-FAQ" firstAttribute="leading" secondItem="uw9-V1-pR8" secondAttribute="leading" constant="95" id="ni4-Nu-YLZ"/>
+                            <constraint firstItem="1is-n2-LWO" firstAttribute="leading" secondItem="6xQ-Cu-TMu" secondAttribute="leading" constant="-95.5" id="rb8-VO-Uko"/>
+                            <constraint firstAttribute="bottom" secondItem="TBq-cU-FAQ" secondAttribute="bottom" constant="75" id="wsN-Lq-njv"/>
+                            <constraint firstItem="XxR-Ww-pia" firstAttribute="leading" secondItem="6xQ-Cu-TMu" secondAttribute="leadingMargin" constant="-30" id="yq5-5L-DBf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uw9-V1-pR8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cuisines" id="PZF-HF-btc"/>
+                    <connections>
+                        <outlet property="categoriesDotsStack" destination="1is-n2-LWO" id="g2F-qm-pzC"/>
+                        <outlet property="cuisinesButton" destination="UcN-0v-IYQ" id="sRa-6x-s4I"/>
+                        <outlet property="cuisinesTableView" destination="TBq-cU-FAQ" id="KWQ-3H-7Lb"/>
+                        <outlet property="navBarBg" destination="XxR-Ww-pia" id="UPx-ve-TZS"/>
+                        <segue destination="rCc-Yn-JTT" kind="show" identifier="ToRecipesAgain" id="na2-7F-I7p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gv-1g-FMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="-585"/>
+        </scene>
+        <!--Shopping list-->
+        <scene sceneID="h63-8L-s92">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="1a7-wY-Gok" customClass="ListVC" customModule="eating_in" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GsI-Qg-VJr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="5" estimatedRowHeight="5" sectionHeaderHeight="10" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ffD-9I-z0i">
+                                <rect key="frame" x="5" y="15" width="404" height="634"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="scrollIndicatorInsets" minX="5" minY="10" maxX="5" maxY="0.0"/>
+                                <color key="separatorColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="soq-DP-XaJ">
+                                <rect key="frame" x="-11" y="745" width="434" height="110"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="TzW-xC-Urz">
+                                        <rect key="frame" x="50" y="-7" width="334" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebg-Gu-nsh">
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="62"/>
+                                                <state key="normal" image="Recipes no bg">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="V8G-UB-2ys" kind="show" id="lS2-Na-44J"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9u-II-2VN">
+                                                <rect key="frame" x="185" y="0.0" width="149" height="62"/>
+                                                <state key="normal" image="List bg 1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TzW-xC-Urz" secondAttribute="trailing" constant="50" id="HRm-ic-81e"/>
+                                    <constraint firstItem="TzW-xC-Urz" firstAttribute="top" secondItem="soq-DP-XaJ" secondAttribute="top" constant="-7" id="lp4-J6-7AR"/>
+                                    <constraint firstItem="TzW-xC-Urz" firstAttribute="leading" secondItem="soq-DP-XaJ" secondAttribute="leading" constant="50" id="qjK-3a-dnp"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chosen category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmm-Tw-RBl">
+                                <rect key="frame" x="0.0" y="-18" width="414" height="17"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiO-mk-iEh">
+                                <rect key="frame" x="121" y="682" width="172" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="14"/>
+                                <state key="normal" title="+ Add ingredient">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addIngredient:" destination="1a7-wY-Gok" eventType="touchUpInside" id="eDv-eV-uXJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="soq-DP-XaJ" firstAttribute="top" secondItem="GsI-Qg-VJr" secondAttribute="top" constant="745" id="3Gz-C6-Eme"/>
+                            <constraint firstItem="cmm-Tw-RBl" firstAttribute="top" secondItem="GsI-Qg-VJr" secondAttribute="top" constant="-18" id="5Qp-Id-nYJ"/>
+                            <constraint firstItem="ZiO-mk-iEh" firstAttribute="top" secondItem="ffD-9I-z0i" secondAttribute="bottom" constant="33" id="AMe-DQ-8aY"/>
+                            <constraint firstItem="k37-Jy-ODR" firstAttribute="trailing" secondItem="ffD-9I-z0i" secondAttribute="trailing" constant="5" id="D0h-tr-lRz"/>
+                            <constraint firstItem="ffD-9I-z0i" firstAttribute="leading" secondItem="k37-Jy-ODR" secondAttribute="leading" constant="5" id="F9H-4i-hm6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="soq-DP-XaJ" secondAttribute="trailing" constant="-29" id="GRU-YT-HcF"/>
+                            <constraint firstItem="ZiO-mk-iEh" firstAttribute="leading" secondItem="k37-Jy-ODR" secondAttribute="leading" constant="121" id="Gak-bj-emK"/>
+                            <constraint firstItem="soq-DP-XaJ" firstAttribute="top" secondItem="ZiO-mk-iEh" secondAttribute="bottom" constant="35" id="Jla-Q3-v4r"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="soq-DP-XaJ" secondAttribute="bottom" constant="-47" id="PqV-bQ-w32"/>
+                            <constraint firstItem="ffD-9I-z0i" firstAttribute="top" secondItem="k37-Jy-ODR" secondAttribute="top" constant="15" id="gKy-eC-AHC"/>
+                            <constraint firstItem="k37-Jy-ODR" firstAttribute="trailing" secondItem="ZiO-mk-iEh" secondAttribute="trailing" constant="121" id="ldO-kT-kd5"/>
+                            <constraint firstItem="soq-DP-XaJ" firstAttribute="leading" secondItem="GsI-Qg-VJr" secondAttribute="leadingMargin" constant="-31" id="o0y-GJ-Piw"/>
+                            <constraint firstItem="cmm-Tw-RBl" firstAttribute="leading" secondItem="k37-Jy-ODR" secondAttribute="leading" id="tde-0B-y3N"/>
+                            <constraint firstItem="k37-Jy-ODR" firstAttribute="trailing" secondItem="cmm-Tw-RBl" secondAttribute="trailing" id="x1f-cV-maE"/>
+                            <constraint firstItem="ffD-9I-z0i" firstAttribute="centerX" secondItem="GsI-Qg-VJr" secondAttribute="centerX" id="xBr-MN-lZC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k37-Jy-ODR"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Shopping list" leftItemsSupplementBackButton="YES" id="Mpe-YN-vwY"/>
+                    <connections>
+                        <outlet property="addIngredientButton" destination="ZiO-mk-iEh" id="EFD-4I-oZA"/>
+                        <outlet property="navBarBg" destination="soq-DP-XaJ" id="pw6-yq-wqV"/>
+                        <outlet property="tableView" destination="ffD-9I-z0i" id="UFt-Y1-dpM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jl0-tW-zQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.94202898550736" y="906.69642857142856"/>
+        </scene>
+        <!--Recipes CuisinesVC-->
+        <scene sceneID="qkS-hQ-1cN">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="rCc-Yn-JTT" customClass="RecipesCuisinesVC" customModule="eating_in" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qqc-ht-E10">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="5" estimatedRowHeight="5" sectionHeaderHeight="10" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="KaS-Bc-BXN">
+                                <rect key="frame" x="5" y="141" width="404" height="639"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="scrollIndicatorInsets" minX="5" minY="10" maxX="5" maxY="0.0"/>
+                                <color key="separatorColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bc8-s7-BJw">
+                                <rect key="frame" x="-11" y="780" width="434" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfH-WP-V2A">
+                                        <rect key="frame" x="34" y="12" width="102" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chosen category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvr-hc-CbR">
+                                <rect key="frame" x="0.0" y="-18" width="414" height="17"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZv-LQ-ko1">
+                                <rect key="frame" x="0.0" y="7" width="414" height="124"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" id="cVU-71-t3W">
+                                <rect key="frame" x="0.0" y="7" width="414" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="safeArea" id="tzi-um-rJZ"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="xjm-ef-Hpd">
+                                <rect key="frame" x="55.5" y="794" width="303" height="26"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9d-oX-vTm">
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="26"/>
+                                        <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="12"/>
+                                        <state key="normal" title="Recipes">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="V8G-UB-2ys" kind="show" id="dNT-7C-554"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-79-zV0">
+                                        <rect key="frame" x="131" y="0.0" width="41" height="26"/>
+                                        <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="12"/>
+                                        <state key="normal" title="Lists">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="1a7-wY-Gok" kind="show" id="sY8-5U-OId"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crv-F0-dVg">
+                                        <rect key="frame" x="262" y="0.0" width="41" height="26"/>
+                                        <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="12"/>
+                                        <state key="normal" title="Profile">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="f9d-oX-vTm" firstAttribute="centerY" secondItem="xjm-ef-Hpd" secondAttribute="centerY" id="eXU-8X-bub"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSN-lN-rGX">
+                                <rect key="frame" x="20" y="59" width="374" height="20"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bvr-hc-CbR" firstAttribute="top" secondItem="Qqc-ht-E10" secondAttribute="top" constant="-18" id="5aP-UB-rTa"/>
+                            <constraint firstItem="xjm-ef-Hpd" firstAttribute="top" secondItem="KaS-Bc-BXN" secondAttribute="bottom" constant="14" id="763-YN-6CG"/>
+                            <constraint firstItem="hZv-LQ-ko1" firstAttribute="trailing" secondItem="U3S-Vw-jHw" secondAttribute="trailing" id="8c2-cZ-n6V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bc8-s7-BJw" secondAttribute="trailing" constant="-29" id="8dy-Tl-MCa"/>
+                            <constraint firstItem="KaS-Bc-BXN" firstAttribute="top" secondItem="cVU-71-t3W" secondAttribute="bottom" constant="10" id="DXd-V8-iEe"/>
+                            <constraint firstItem="cVU-71-t3W" firstAttribute="leading" secondItem="U3S-Vw-jHw" secondAttribute="leading" id="Dnw-h9-K5r"/>
+                            <constraint firstItem="KaS-Bc-BXN" firstAttribute="leading" secondItem="U3S-Vw-jHw" secondAttribute="leading" constant="5" id="ERK-40-yZ5"/>
+                            <constraint firstItem="KaS-Bc-BXN" firstAttribute="centerX" secondItem="Qqc-ht-E10" secondAttribute="centerX" id="EzL-xu-IGZ"/>
+                            <constraint firstItem="eSN-lN-rGX" firstAttribute="leading" secondItem="U3S-Vw-jHw" secondAttribute="leading" constant="20" id="GIW-HI-9dI"/>
+                            <constraint firstItem="Bvr-hc-CbR" firstAttribute="leading" secondItem="U3S-Vw-jHw" secondAttribute="leading" id="OXy-jX-anc"/>
+                            <constraint firstItem="cVU-71-t3W" firstAttribute="trailing" secondItem="U3S-Vw-jHw" secondAttribute="trailing" id="UYK-rs-02w"/>
+                            <constraint firstItem="KaS-Bc-BXN" firstAttribute="top" secondItem="hZv-LQ-ko1" secondAttribute="bottom" constant="10" id="ZfV-W1-eI5"/>
+                            <constraint firstItem="xjm-ef-Hpd" firstAttribute="centerX" secondItem="KaS-Bc-BXN" secondAttribute="centerX" id="ZgK-Rx-gyg"/>
+                            <constraint firstItem="xjm-ef-Hpd" firstAttribute="centerY" secondItem="bc8-s7-BJw" secondAttribute="centerY" constant="-5" id="aP2-kD-JAI"/>
+                            <constraint firstItem="eSN-lN-rGX" firstAttribute="centerY" secondItem="cVU-71-t3W" secondAttribute="centerY" id="aWg-m8-ttp"/>
+                            <constraint firstItem="hZv-LQ-ko1" firstAttribute="leading" secondItem="U3S-Vw-jHw" secondAttribute="leading" id="djQ-kJ-1kS"/>
+                            <constraint firstItem="cVU-71-t3W" firstAttribute="top" secondItem="U3S-Vw-jHw" secondAttribute="top" constant="7" id="gDv-fN-KGA"/>
+                            <constraint firstAttribute="bottom" secondItem="KaS-Bc-BXN" secondAttribute="bottom" constant="62" id="hB8-rC-WmE"/>
+                            <constraint firstItem="KaS-Bc-BXN" firstAttribute="top" secondItem="cVU-71-t3W" secondAttribute="bottom" constant="10" id="hdm-Cq-3UY"/>
+                            <constraint firstItem="hZv-LQ-ko1" firstAttribute="top" secondItem="U3S-Vw-jHw" secondAttribute="top" constant="7" id="iGk-gb-fXl"/>
+                            <constraint firstItem="bc8-s7-BJw" firstAttribute="top" secondItem="KaS-Bc-BXN" secondAttribute="bottom" id="l0h-rh-ckE"/>
+                            <constraint firstItem="U3S-Vw-jHw" firstAttribute="trailing" secondItem="eSN-lN-rGX" secondAttribute="trailing" constant="20" id="oFr-P3-LFT"/>
+                            <constraint firstItem="U3S-Vw-jHw" firstAttribute="trailing" secondItem="Bvr-hc-CbR" secondAttribute="trailing" id="sDt-kB-6Qq"/>
+                            <constraint firstItem="U3S-Vw-jHw" firstAttribute="trailing" secondItem="KaS-Bc-BXN" secondAttribute="trailing" constant="5" id="uj0-oA-wIn"/>
+                            <constraint firstItem="bc8-s7-BJw" firstAttribute="leading" secondItem="Qqc-ht-E10" secondAttribute="leadingMargin" constant="-31" id="vnu-ua-WWV"/>
+                            <constraint firstItem="eSN-lN-rGX" firstAttribute="centerX" secondItem="cVU-71-t3W" secondAttribute="centerX" id="xhG-F6-e81"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U3S-Vw-jHw"/>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="GRj-cQ-lJw"/>
+                    <connections>
+                        <outlet property="cuisineImage" destination="cVU-71-t3W" id="DPm-JT-Jg6"/>
+                        <outlet property="labelText" destination="eSN-lN-rGX" id="CWU-h7-6oV"/>
+                        <outlet property="navBarBackground" destination="bc8-s7-BJw" id="jZM-hx-JNz"/>
+                        <outlet property="recipeBg" destination="dfH-WP-V2A" id="VtU-Il-E8M"/>
+                        <outlet property="tableView" destination="KaS-Bc-BXN" id="9bw-zu-b2e"/>
+                        <segue destination="BBh-OG-SDE" kind="show" identifier="ToRecipeDetailsCuisine" id="6Zv-pA-cnS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ROy-hm-qoz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1859" y="-585"/>
+        </scene>
+        <!--Cuisines-->
+        <scene sceneID="bOs-md-mjR">
+            <objects>
+                <viewController title="Cuisines" id="LWc-No-uQD" customClass="FavouritesVC" customModule="eating_in" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oSr-bT-ntS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bha-vC-jr0">
+                                <rect key="frame" x="-10" y="775" width="434" height="75"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="d1I-Bd-Ouh">
+                                        <rect key="frame" x="54" y="-7" width="334" height="62"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uS-IS-exr">
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="62"/>
+                                                <state key="normal" image="Recipes bg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="V8G-UB-2ys" kind="show" id="R1W-Qx-WZW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6x-yO-sLS">
+                                                <rect key="frame" x="185" y="0.0" width="149" height="62"/>
+                                                <state key="normal" image="list no bg">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="1a7-wY-Gok" kind="show" id="GY4-dv-kRa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="d1I-Bd-Ouh" firstAttribute="leading" secondItem="Bha-vC-jr0" secondAttribute="leading" constant="54" id="3Hb-1c-Aky"/>
+                                    <constraint firstAttribute="trailing" secondItem="d1I-Bd-Ouh" secondAttribute="trailing" constant="46" id="Dvz-vt-3fT"/>
+                                    <constraint firstItem="d1I-Bd-Ouh" firstAttribute="centerX" secondItem="Bha-vC-jr0" secondAttribute="centerX" constant="4" id="Z5n-7K-GDF"/>
+                                    <constraint firstItem="d1I-Bd-Ouh" firstAttribute="top" secondItem="Bha-vC-jr0" secondAttribute="top" constant="-7" id="k5d-0Y-UTy"/>
+                                </constraints>
+                            </view>
+                            <collectionView multipleTouchEnabled="YES" contentMode="TopLeft" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="73E-SH-FSd">
+                                <rect key="frame" x="95" y="53" width="299" height="714"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="pqn-jb-4hW">
+                                    <size key="itemSize" width="114" height="152"/>
+                                    <size key="estimatedItemSize" width="397" height="152"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wmj-ax-V3E">
+                                <rect key="frame" x="-95.5" y="181" width="265" height="54"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="HmD-cC-Qo3">
+                                        <rect key="frame" x="35" y="0.0" width="195" height="22"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7T-XP-yQ5">
+                                                <rect key="frame" x="0.0" y="0.0" width="7" height="22"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="dot blue"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P6-L5-ca9">
+                                                <rect key="frame" x="94" y="0.0" width="7" height="22"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="dot blue"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1g-fZ-jcu">
+                                                <rect key="frame" x="188" y="0.0" width="7" height="22"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <state key="normal" image="dot"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="68v-Eq-sbp">
+                                        <rect key="frame" x="0.0" y="25" width="265" height="29"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rb-81-N2T">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="29"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                <state key="normal" title="Categories">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69196810789999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="V8G-UB-2ys" kind="show" animates="NO" id="SBW-h2-KgK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0u-Lh-Kzm">
+                                                <rect key="frame" x="106" y="0.0" width="55" height="29"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                <state key="normal" title="Cuisines">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69196810789999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="D0Q-mp-keR" kind="show" animates="NO" id="Lfa-oA-uia"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYh-eL-5v2">
+                                                <rect key="frame" x="197" y="0.0" width="68" height="29"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="15"/>
+                                                <state key="normal" title="Favourites">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.8980392157" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bha-vC-jr0" firstAttribute="centerX" secondItem="oSr-bT-ntS" secondAttribute="centerX" id="8lZ-qr-KBY"/>
+                            <constraint firstItem="wmj-ax-V3E" firstAttribute="leading" secondItem="oSr-bT-ntS" secondAttribute="leading" constant="-95.5" id="8nf-j3-C7i"/>
+                            <constraint firstItem="wmj-ax-V3E" firstAttribute="top" secondItem="flZ-kW-J1K" secondAttribute="top" constant="181" id="93Y-3k-qMy"/>
+                            <constraint firstAttribute="bottom" secondItem="73E-SH-FSd" secondAttribute="bottom" constant="75" id="Lq4-7s-Npi"/>
+                            <constraint firstItem="Bha-vC-jr0" firstAttribute="leading" secondItem="oSr-bT-ntS" secondAttribute="leadingMargin" constant="-30" id="TcU-Hm-yUY"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Bha-vC-jr0" secondAttribute="bottom" constant="-42" id="WZZ-v8-thG"/>
+                            <constraint firstItem="Bha-vC-jr0" firstAttribute="top" secondItem="73E-SH-FSd" secondAttribute="bottom" constant="8" id="XRK-ru-M13"/>
+                            <constraint firstItem="73E-SH-FSd" firstAttribute="trailing" secondItem="oSr-bT-ntS" secondAttribute="trailingMargin" id="j0D-Oq-VXp"/>
+                            <constraint firstItem="73E-SH-FSd" firstAttribute="top" secondItem="flZ-kW-J1K" secondAttribute="top" constant="53" id="t65-AW-kUR"/>
+                            <constraint firstItem="73E-SH-FSd" firstAttribute="leading" secondItem="flZ-kW-J1K" secondAttribute="leading" constant="95" id="xR6-NV-cXg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="flZ-kW-J1K"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cuisines" id="UDk-7U-sT3"/>
+                    <connections>
+                        <outlet property="categoriesDotsStack" destination="wmj-ax-V3E" id="1B8-FZ-Htr"/>
+                        <outlet property="navBarBg" destination="Bha-vC-jr0" id="76M-dK-qET"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WtW-uv-JgZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="-620"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zKE-xm-aAD"/>
+        <segue reference="iXB-jf-qZF"/>
+        <segue reference="Lfa-oA-uia"/>
+        <segue reference="6Zv-pA-cnS"/>
+        <segue reference="VF3-V8-oTY"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="List bg 1" width="142" height="62"/>
+        <image name="Plus" width="49" height="48"/>
+        <image name="Recipes bg" width="142" height="62"/>
+        <image name="Recipes no bg" width="142" height="62"/>
+        <image name="arrow" width="463" height="310"/>
+        <image name="dot" width="7" height="9"/>
+        <image name="dot blue" width="7" height="9"/>
+        <image name="list no bg" width="142" height="62"/>
+        <image name="placeholder" width="200" height="300"/>
+    </resources>
+</document>

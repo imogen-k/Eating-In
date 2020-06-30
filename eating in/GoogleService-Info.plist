@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>621260498233-i7lu1juug9v0r7hgimhe73iu23h3vl6h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.621260498233-i7lu1juug9v0r7hgimhe73iu23h3vl6h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBwCrI33OvoWydM5mYdhnwOlgN7Kf-bSys</string>
+	<key>GCM_SENDER_ID</key>
+	<string>621260498233</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ImogenK.eating-in</string>
+	<key>PROJECT_ID</key>
+	<string>eating-in-b077a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>eating-in-b077a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:621260498233:ios:6cfc7750fa41ab10f5b4e8</string>
+	<key>DATABASE_URL</key>
+	<string>https://eating-in-b077a.firebaseio.com</string>
+</dict>
+</plist>
