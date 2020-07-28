@@ -7,6 +7,7 @@
 //
 
 import Firebase
+import FirebaseFirestore
 
 extension Firestore {
     var categories: Query {

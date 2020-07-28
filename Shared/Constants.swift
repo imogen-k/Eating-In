@@ -33,6 +33,7 @@ struct Identifiers {
     static let RecipeCell = "RecipeCell"
     static let CuisineCell = "CuisineCell"
     static let ListCell = "ListCell"
+    static let ListCells = "ListCells"
 }
 
 struct Segues {

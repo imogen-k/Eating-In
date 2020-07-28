@@ -44,7 +44,7 @@ class ListVC: UIViewController  {
     func setupTableView() {
     tableView.delegate = self
     tableView.dataSource = self
-        tableView.register(UINib(nibName: Identifiers.ListCell, bundle: nil), forCellReuseIdentifier: Identifiers.ListCell)
+        tableView.register(UINib(nibName: Identifiers.ListCells, bundle: nil), forCellReuseIdentifier: Identifiers.ListCells)
        
     }
     @IBAction func addIngredient(_ sender: UIButton) {
@@ -60,7 +60,9 @@ class ListVC: UIViewController  {
             let newIngredient = Ingredient(name: name)
             
             // add ingredient
-            self.ingredientStore.add(ingredient: newIngredient, at: 0)
+            
+            //self.ingredientStore.add(ingredient: newIngredient, at: 0)
+            self.ingredientStore.add(newIngredient, at: 0)
             
             //reload data in tableview
             let indexPath = IndexPath(row: 0, section: 0)
@@ -127,9 +129,10 @@ extension ListVC: UITableViewDelegate, UITableViewDataSource {
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.ListCell, for: indexPath) as? ListCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.ListCells, for: indexPath) as? ListCells {
             
-            cell.listText.text = ingredientStore.ingredients[indexPath.section][indexPath.row].name
+           cell.listText.text = ingredientStore.ingredients[indexPath.section][indexPath.row].name
+            
             
         cell.configureCell()
             
@@ -175,7 +178,8 @@ extension ListVC: UITableViewDelegate, UITableViewDataSource {
             
             tableView.deleteRows(at: [indexPath], with: .automatic)
             
-            self.ingredientStore.add(ingredient: boughtIngredient, at: 0, bought: true)
+           // self.ingredientStore.add(ingredient: boughtIngredient, at: 0, bought: true)
+            self.ingredientStore.add(boughtIngredient, at: 0, bought: true)
             tableView.insertRows(at: [IndexPath(row: 0, section: 1)], with: .automatic)
             
          IngredientsUtility.save(self.ingredientStore.ingredients)

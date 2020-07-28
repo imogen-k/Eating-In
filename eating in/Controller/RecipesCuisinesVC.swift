@@ -25,8 +25,8 @@ class RecipesCuisinesVC: UIViewController {
     @IBOutlet weak var labelText: UILabel!
     @IBOutlet weak var cuisineImage: UIImageView!
     
+    
     @IBOutlet weak var navBarBackground: UIView!
-    @IBOutlet weak var recipeBg: UIView!
     
     
     override func viewDidLoad() {
@@ -36,7 +36,7 @@ class RecipesCuisinesVC: UIViewController {
         setupTableView()
         tableView.layer.cornerRadius = 7
         labelText.text = cuisine.name
-        recipeBg.layer.cornerRadius = 5
+        
         navBarBackground.layer.borderWidth = 1
         navBarBackground.layer.borderColor = AppColors.Black.cgColor
         
@@ -65,7 +65,8 @@ class RecipesCuisinesVC: UIViewController {
         }
     
     func setupQueryCuisine() {
-          listener = db.recipesCuisines(cuisine: cuisine.id).addSnapshotListener({ (snap, error) in
+         listener = db.recipesCuisines(cuisine: cuisine.id).addSnapshotListener({ (snap, error) in
+    
               if let error = error {
                   debugPrint(error.localizedDescription)
                   return
